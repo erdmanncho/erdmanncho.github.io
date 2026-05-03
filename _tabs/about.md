@@ -1,8 +1,22 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 4
+order: 5
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+## 你好，我是Wildling 👋
+
+一个喜欢观物察己、感时应物的普通人。
+
+## 我在做什么
+
+- 📚 读书、思考、记录
+- 🖊️ 用文字留住生活的痕迹
+
+## 这个博客写什么
+
+记录日常所见所思，分享读书笔记、生活随笔，偶尔也聊聊教育和人生。
+
+## 联系我
+
+欢迎通过下方邮件图标与我交流。
