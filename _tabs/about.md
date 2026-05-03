@@ -1,16 +1,17 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 5
+order: 4
 ---
 
-## 你好，我是Wildling 👋
+## 你好，我是在野哇 👋
 
 一个喜欢观物察己、感时应物的普通人。
 
 ## 我在做什么
 
 - 📚 读书、思考、记录
+- 🌱 关注教育与成长
 - 🖊️ 用文字留住生活的痕迹
 
 ## 这个博客写什么
