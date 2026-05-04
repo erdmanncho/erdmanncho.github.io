@@ -1,0 +1,53 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+
+<html lang="{{ page.lang | default: site.alt_lang | default: site.lang }}" {{ prefer_dark }}>
+  {% include head.html %}
+
+  <body>
+    {% include sidebar.html lang=lang %}
+
+    <div id="main-wrapper" class="d-flex justify-content-center">
+      <div class="container d-flex flex-column px-xxl-5">
+        {% include topbar.html lang=lang %}
+
+        <div class="row flex-grow-1">
+          <main aria-label="Main Content" class="col-12 layout-wrapper">
+            {{ content }}
+          </main>
+
+          {% unless layout.panel == false %}
+            {% include panel.html lang=lang %}
+          {% endunless %}
+        </div>
+
+        <div class="row">
+          {% include footer.html lang=lang %}
+        </div>
+      </div>
+    </div>
+
+    {% include_cached js-selector.html lang=lang %}
+
+    <!-- 🎵 APlayer 悬浮音乐播放器 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+    <meting-js
+      server="netease"
+      type="playlist"
+      id="29352917"
+      fixed="true"
+      autoplay="false"
+      theme="#1DB954"
+      order="random"
+      loop="all"
+      preload="auto"
+      mutex="true">
+    </meting-js>
+
+  </body>
+</html>
