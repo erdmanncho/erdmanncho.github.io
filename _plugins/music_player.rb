@@ -7,6 +7,6 @@ Jekyll::Hooks.register [:pages, :documents], :post_render do |item|
         </audio>
       </div>
     HTML
-    item.output = item.output.gsub("</body>", "#{player}</body>")
+    item.output = item.output.gsub("</html>", "#{player}</html>")
   end
 end
